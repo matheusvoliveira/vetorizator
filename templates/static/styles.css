@@ -67,9 +67,10 @@ nav a {
 }
 
 /* Estilo base para o botão */
-button {
+button, form {
     display: inline-flex;
     align-items: center;
+    height: 100vh;
     justify-content: center;
     font-weight: 600;
     font-size: 16px;
@@ -94,19 +95,9 @@ button {
     max-width: 60vw;
 }
 
-/* Estilo para o botão no cabeçalho */
-.convert-button-header {
-    min-height: 40px;
-    /* Tamanho menor para o cabeçalho */
-    padding: 8px 16px;
-    /* Tamanho menor para o cabeçalho */
-    font-size: 14px;
-    /* Tamanho menor para o cabeçalho */
-    line-height: 18px;
-    /* Tamanho menor para o cabeçalho */
-    margin-bottom: 0;
-    /* Nenhum espaço inferior para o cabeçalho */
-    border-width: 1px;
+#download_button {
+    margin: red;
+    padding: red;
 }
 
 

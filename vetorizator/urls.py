@@ -19,11 +19,16 @@ from django.urls import path
 from app import views
 from django.conf import settings
 from django.conf.urls.static import static
+from app.views import upload_image
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('upload/', views.upload_image, name='upload_image')
+    path('index/', views.index),
+    path('', views.upload_image, name='upload_image'),
+    # path('upload-button/', views.upload_button, name='upload_button')
+    path('convert/', views.convert, name='convert_view'),
+    path('download_image/', views.download_image, name='download_image'),
+    path('download_last_image/', views.download_last_image, name='download_last_image'),  # Add this line
 ] 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
